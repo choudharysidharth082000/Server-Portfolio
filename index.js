@@ -26,7 +26,11 @@ app.use(bodyParser.json())
 
 // ------------------------------------------------Connection with the Database-----------------------------------------
 const databaseUrl = process.env.DATABASE_URL;
-mongoose.connect(databaseUrl, ()=>
+mongoose.connect(databaseUrl,{
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+  }, ()=>
 {
     console.log('Database is Connection Success');
 })
