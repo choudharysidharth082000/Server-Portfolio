@@ -32,7 +32,7 @@ mongoose.connect(databaseUrl,{
     useCreateIndex: true,
   }, ()=>
 {
-    console.log('Database is Connection Success');
+    console.log('Database is Connected Successfully');
 })
 // -------------------------------------------------------------------------------------------------------------------------------
 
