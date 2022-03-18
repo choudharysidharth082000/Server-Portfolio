@@ -1,1 +1,12 @@
 GET http://localhost:3000/v1/test/testApp
+
+###
+
+POST http://localhost:3000/v1/messsage/postMessage
+Content-Type: application/json
+
+{
+    "name": "Sidharth Choudhary",
+    "email": "choudharysidharth082000@gmail.com",
+    "message": "12345678"
+}

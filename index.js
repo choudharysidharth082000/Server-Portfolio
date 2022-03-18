@@ -8,6 +8,7 @@ const cors = require('cors');
 const app = express();
 
 const testApp = require('./View/testApp');
+const formData = require('./View/FormData');
 //-------------------------------dotenv config-------------------------------------------
 dotenv.config();
 // -----------------------------------------------------------------------------------------
@@ -33,8 +34,13 @@ mongoose.connect(databaseUrl, ()=>
 
 
 // ------------------------------------------------app.use-------------------------------------------------------------
+app.get('/', (req, res)=>
+{
+    res.send('Hello User...');
+})
 app.use(cors());
 app.use('/v1/test', testApp);
+app.use('/v1/messsage', formData);
 
 
 
