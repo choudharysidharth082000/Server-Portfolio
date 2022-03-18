@@ -10,3 +10,7 @@ Content-Type: application/json
     "email": "choudharysidharth082000@gmail.com",
     "message": "12345678"
 }
+
+###
+
+POST 

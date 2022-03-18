@@ -22,6 +22,7 @@ const getFormData = async (req,res) =>
         }
         else{
             await postData.save();
+            console.log(postData);
             res.status(200).json(
                 {
                     status: true,
